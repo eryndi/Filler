@@ -15,3 +15,12 @@ or use command of Makefile to see my champion in solitary game
 ```
 make filler
 ```
+
+### Start
+![alt text](https://github.com/eryndi/Filler/blob/master/screenshots/START.png "Start")
+
+### Filler game
+![alt text](https://github.com/eryndi/Filler/blob/master/screenshots/GAME.png "Filler Game")
+
+### End - Winner
+![alt text](https://github.com/eryndi/Filler/blob/master/screenshots/END.png "End Winner")
