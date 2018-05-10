@@ -23,4 +23,4 @@ make filler
 ![alt text](https://github.com/eryndi/Filler/blob/master/screenshots/GAME.png "Filler Game")
 
 ### End - Winner
-![alt text](https://github.com/eryndi/Filler/blob/master/screenshots/GAME.png "End Winner")
+![alt text](https://github.com/eryndi/Filler/blob/master/screenshots/END.png "End Winner")
