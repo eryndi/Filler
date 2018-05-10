@@ -6,12 +6,15 @@
 /*   By: dwald <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 13:34:30 by dwald             #+#    #+#             */
-/*   Updated: 2018/01/12 14:31:01 by dwald            ###   ########.fr       */
+/*   Updated: 2017/11/20 14:36:54 by dwald            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLER_PLAYER_H
 # define FILLER_PLAYER_H 
+
+# define TEST_PATH "/Users/dwald/42/05_filler/test"
+# define ERROR_PATH "/Users/dwald/42/05_filler/error"
 
 /*
 ** ------------------------------ Librairies -----------------------------------

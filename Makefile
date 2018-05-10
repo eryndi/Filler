@@ -6,7 +6,7 @@
 #    By: dwald <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/22 13:52:40 by dwald             #+#    #+#              #
-#    Updated: 2017/11/25 10:56:52 by dwald            ###   ########.fr        #
+#    Updated: 2018/05/10 18:16:45 by dwald            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC_FILES =		algo_part_1.c \
 				main.c \
 				parser.c
 				
-SRC_PATH =		.
+SRC_PATH =		srcs
 
 OBJ_PATH =		objs
 
@@ -44,19 +44,16 @@ NC = 			\033[0m
 all: $(NAME)
 
 $(NAME):	$(OBJ)
-			@make -C $(LIBFT_PATH)
-			@$(CC) $(FLAGS) $(OBJ) $(LIBFT) -I./libft/includes -o $(NAME)
+			make -C $(LIBFT_PATH)
+			$(CC) $(FLAGS) $(OBJ) $(LIBFT) -I./libft/includes -o $(NAME)
 			@echo "$(GREEN)player dwald.filler compiled$(NC)"
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c
-			@mkdir -p $(OBJ_PATH)
-			@printf "🐛  $(notdir $<)\r"
-			@$(CC) $(FLAGS) -I $(INC) -I./libft/includes -o $@ -c $<
+			mkdir -p $(OBJ_PATH)
+			$(CC) $(FLAGS) -I $(INC) -I./libft/includes -o $@ -c $<
 
 filler:
-			rm -rf ./test || true
-			rm -rf ./error || true
-			./filler_vm -f ./maps/map01 -p1 ./$(NAME)
+			./filler_vm -f ./resources/maps/map01 -p1 ./$(NAME)
 	
 clean:
 			/bin/rm -f $(OBJ)
